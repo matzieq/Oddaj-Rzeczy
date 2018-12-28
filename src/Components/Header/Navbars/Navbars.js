@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbars.scss';
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 const Navbars = () => {
     return (
@@ -12,7 +14,13 @@ const Navbars = () => {
             </div>
             <nav className="page-header-menu">
                 <ul>
-                    <li><a href="/" target="_blank" rel="noopener noreferrer">Start</a></li>
+                    <li><ScrollIntoView 
+                        selector='.card-background'
+                        smooth={true}
+                        alignToTop={true}
+                    >
+                        Start
+                    </ScrollIntoView></li>
                     <li><a href="/" target="_blank" rel="noopener noreferrer">O co chodzi?</a></li>
                     <li><a href="/" target="_blank" rel="noopener noreferrer">O nas</a></li>
                     <li><a href="/" target="_blank" rel="noopener noreferrer">Fundacje i organizacje</a></li>

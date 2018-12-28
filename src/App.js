@@ -9,6 +9,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <Stats />
+        <div style={{
+          height: '2000px'
+        }}></div>
       </div>
     );
   }

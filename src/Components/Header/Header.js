@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Header.scss';
 import CallToAction from './CallToAction/CallToAction';
 import Navbars from './Navbars/Navbars';
